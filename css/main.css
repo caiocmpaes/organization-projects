@@ -1,0 +1,58 @@
+.container-fluid {
+    padding: 0;
+}
+
+.list-group {
+    margin-bottom: 0;
+    border-right: 1px solid #ddd;
+}
+
+.list-group-item {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+span.mega-octicon {
+    width: 100%;
+    font-size: 50px;
+}
+
+#counters-card .col-xs-4,
+#counters-card .col-xs-6,
+#license-language-card .col-xs-6 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#license-language-card .col-xs-6 {
+    margin-top: 60px;
+}
+
+.contributor-list-item span.text {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.avatar {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.contributor-list-item .login {
+    font-size: 20px;
+}
+
+.additions,
+#counters-card .pulls {
+    color: #28a745;
+}
+
+.deletions,
+#counters-card .issues {
+    color: #cb2431;
+}

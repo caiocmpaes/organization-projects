@@ -1,0 +1,29 @@
+service: organization-projects
+
+frameworkVersion: "=1.27.3"
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  getIndex:
+    handler: getIndex.handler
+    events:
+      - http:
+          path: /
+          method: get
+
+  getRepositoryContributors:
+    handler: getRepositoryContributors.handler
+    events:
+      - http:
+          path: /contributors/{owner}/{name}
+          method: get
